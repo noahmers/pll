@@ -1,0 +1,433 @@
+#setting up the simulation
+import random
+
+#skill levels
+archers_rating = 9
+atlas_rating = 5
+cannons_rating = 9
+chaos_rating = 6
+chrome_rating = 8
+redwoods_rating = 7
+waterdogs_rating = 4
+whipsnakes_rating = 10
+#simulations
+archerssim = archers_rating * random.randint(0,10)
+atlassim = atlas_rating * random.randint(0,10)
+cannonssim = cannons_rating * random.randint(0,10)
+chaossim = chaos_rating * random.randint(0,10)
+chromesim = chrome_rating * random.randint(0,10)
+redwoodssim = redwoods_rating * random.randint(0,10)
+waterdogssim = waterdogs_rating * random.randint(0,10)
+whipsnakessim = whipsnakes_rating * random.randint(0,10)
+
+#interfrace
+print("Noah Studios Presents")
+print("A Noah Mersmann Production")
+print("Premier League Lacrosse 2k21")
+print("Choose your team")
+print("(1)Archers--9 Overall")
+print("(2)Atlas--5 Overall")
+print("(3)Cannons--9 Overall")
+print("(4)Chaos--6 Overall")
+print("(5)Chrome--8 Overall")
+print("(6)Redwoods--7 Overall")
+print("(7)Waterdogs--4 overall")
+print("(8)Whipsnakes--10 overall")
+x = int(input())
+if x==1:
+    print("Choose your opponent")
+    print("(2)Atlas--5 Overall")
+    print("(3)Cannons--9 Overall")
+    print("(4)Chaos--6 Overall")
+    print("(5)Chrome--8 Overall")
+    print("(6)Redwoods--7 Overall")
+    print("(7)Waterdogs--4 overall")
+    print("(8)Whipsnakes--10 overall")
+    y = int(input())
+if x==2:
+    print("Choose your opponent")
+    print("(1)Archers--9 Overall")
+    print("(3)Cannons--9 Overall")
+    print("(4)Chaos--6 Overall")
+    print("(5)Chrome--8 Overall")
+    print("(6)Redwoods--7 Overall")
+    print("(7)Waterdogs--4 overall")
+    print("(8)Whipsnakes--10 overall")
+    y = int(input())
+if x==3:
+    print("Choose your opponent")
+    print("(1)Archers--9 Overall")
+    print("(2)Atlas--5 Overall")
+    print("(4)Chaos--6 Overall")
+    print("(5)Chrome--8 Overall")
+    print("(6)Redwoods--7 Overall")
+    print("(7)Waterdogs--4 overall")
+    print("(8)Whipsnakes--10 overall")
+    y = int(input())
+if x==4:
+    print("Choose your opponent")
+    print("(1)Archers--9 Overall")
+    print("(2)Atlas--5 Overall")
+    print("(3)Cannons--9 Overall")
+    print("(5)Chrome--8 Overall")
+    print("(6)Redwoods--7 Overall")
+    print("(7)Waterdogs--4 overall")
+    print("(8)Whipsnakes--10 overall")
+    y = int(input())
+if x==5:
+    print("Choose your opponent")
+    print("(1)Archers--9 Overall")
+    print("(2)Atlas--5 Overall")
+    print("(3)Cannons--9 Overall")
+    print("(4)Chaos--6 Overall")
+    print("(6)Redwoods--7 Overall")
+    print("(7)Waterdogs--4 overall")
+    print("(8)Whipsnakes--10 overall")
+    y = int(input())
+if x==6:
+    print("Choose your opponent")
+    print("(1)Archers--9 Overall")
+    print("(2)Atlas--5 Overall")
+    print("(3)Cannons--9 Overall")
+    print("(4)Chaos--6 Overall")
+    print("(5)Chrome--8 Overall")
+    print("(7)Waterdogs--4 overall")
+    print("(8)Whipsnakes--10 overall")
+    y = int(input())
+if x==7:
+    print("Choose your opponent")
+    print("(1)Archers--9 Overall")
+    print("(2)Atlas--5 Overall")
+    print("(3)Cannons--9 Overall")
+    print("(4)Chaos--6 Overall")
+    print("(5)Chrome--8 Overall")
+    print("(6)Redwoods--7 Overall")
+    print("(8)Whipsnakes--10 overall")
+    y = int(input())
+if x==8:
+    print("Choose your opponent")
+    print("(1)Archers--9 Overall")
+    print("(2)Atlas--5 Overall")
+    print("(3)Cannons--9 Overall")
+    print("(4)Chaos--6 Overall")
+    print("(5)Chrome--8 Overall")
+    print("(6)Redwoods--7 Overall")
+    print("(7)Waterdogs--4 overall")
+    y = int(input())
+
+#simming for the Archers (done)
+if x==1 and y==2:
+    if archerssim >= atlassim:
+        print("Archers win")
+    else:
+        print("Atlas win")
+if x==1 and y==3:
+    if archerssim >= cannonssim:
+        print("Archers win")
+    else:
+        print(" wins")
+if x==1 and y==4:
+    if archerssim >= chaossim:
+        print("Archers win")
+    else:
+        print("Chaos win")
+if x==1 and y==5:
+    if archerssim >= chromesim:
+        print("Archers win")
+    else:
+        print("Chrome win")
+if x==1 and y==6:
+    if archerssim >= redwoodssim:
+        print("Archers win")
+    else:
+        print("Redwoods win")
+if x==1 and y==7:
+    if archerssim >= waterdogssim:
+        print("Archers win")
+    else:
+        print("Waterdogs win")
+if x==1 and y==8:
+    if archerssim >= whipsnakessim:
+        print("Archers win")
+    else:
+        print("Whipsnakes win")
+
+
+
+
+#simming for the Atlas (done)
+if x==2 and y==1:
+    if atlassim >= archerssim:
+        print("Atlas win")
+    else:
+        print("Archers win")
+if x==2 and y==3:
+    if atlassim >= cannonssim:
+        print("Atlas win")
+    else:
+        print("Cannons win")
+if x==2 and y==4:
+    if atlassim >= chaossim:
+        print("Atlas win")
+    else:
+        print("Chaos win")
+if x==2 and y==5:
+    if atlassim >= chromesim:
+        print("Atlas win")
+    else:
+        print("Chrome win")
+if x==2 and y==6:
+    if atlassim >= redwoodssim:
+        print("Atlas win")
+    else:
+        print("Redwoods win")
+if x==2 and y==7:
+    if atlassim >= waterdogssim:
+        print("Atlas win")
+    else:
+        print("Waterdogs win")
+if x==2 and y==8:
+    if atlassim >= whipsnakessim:
+        print("Atlas win")
+    else:
+        print("Whipsnakes win")
+
+
+
+
+#simming for Cannons (done)
+if x==3 and y==1:
+    if cannonssim >= archerssim:
+        print("Cannons win")
+    else:
+        print("Archers win")
+if x==3 and y==2
+    if cannonssim >= atlassim:
+        print("Cannons win")
+    else:
+        print("Atlas win")
+if x==3 and y==4:
+    if cannonssim >= chaossim:
+        print("Cannons win")
+    else:
+        print("Chaos win")
+if x==3 and y==5:
+    if cannonssim >= chromesim:
+        print("Cannons win")
+    else:
+        print("Chrome win")
+if x==3 and y==6:
+    if cannonssim >= redwoodssim:
+        print("Cannons win")
+    else:
+        print("Redwoods win")
+if x==3 and y==7:
+    if cannonssim >= waterdogssim:
+        print("Cannons win")
+    else:
+        print("Waterdogs win")
+if x==3 and y==8:
+    if cannonssim >= whipsnakessim:
+        print("Cannons win")
+    else:
+        print("Whipsnakes win")
+
+
+
+
+#simming for Chaos (done)
+if x==4 and y==1:
+    if chaossim >= archerssim:
+        print("Chaos win")
+    else:
+        print("Archers win")
+if x==4 and y==2:
+    if chaossim >= atlassim:
+        print("Chaos win")
+    else:
+        print("Atlas win")
+if x==4 and y==3:
+    if chaossim >= cannonssim:
+        print("Chaos win")
+    else:
+        print("Cannons win")
+if x==4 and y==5:
+    if chaossim >= chromesim:
+        print("Chaos win")
+    else:
+        print("Chrome win")
+if x==4 and y==6:
+    if chaossim >= redwoodssim:
+        print("Chaos win")
+    else:
+        print("Redwoods win")
+if x==4 and y==7:
+    if chaossim >= waterdogssim:
+        print("Chaos win")
+    else:
+        print("Waterdogs win")
+if x==4 and y==8:
+    if chaossim >= whipsnakessim:
+        print("Chaos win")
+    else:
+        print("Whipsnakes win")
+
+
+
+
+#simming for Chrome (done)
+if x==5 and y==1:
+    if chromesim >= archerssim:
+        print("Chrome win")
+    else:
+        print("Archers win")
+if x==5 and y==2:
+    if chromesim >= atlassim:
+        print("Chrome win")
+    else:
+        print("Atlas Win")
+if x==5 and y==3:
+    if chromesim >= cannonssim:
+        print("Chrome win")
+    else:
+        print("Cannons win")
+if x==5 and y==4:
+    if chromesim >= chaossim:
+        print("Chrome win")
+    else:
+        print("Chaos win")
+if x==5 and y==6:
+    if chromesim >= redwoodssim:
+        print("Chrome win")
+    else:
+        print("Redwoods win")
+if x==5 and y==7:
+    if chromesim >= waterdogssim:
+        print("Chrome win")
+    else:
+        print("Waterdogs Win")
+if x==5 and y==8:
+    if chromesim >= whipsnakessim:
+        print("Chrome win")
+    else:
+        print("Whipsnakes win")
+
+
+
+
+#simming for Redwoods (done)
+if x==6 and y==1:
+    if redwoodssim >= archerssim:
+        print("Redwoods win")
+    else:
+        print("Archers win")
+if x==6 and y==3:
+    if redwoodssim >= cannonssim:
+        print("Redwoods win")
+    else:
+        print("Cannons win")
+if x==6 and y==4:
+    if redwoodssim >= chaossim:
+        print("Redwoods win")
+    else:
+        print("Chaos win")
+if x==6 and y==5:
+    if redwoodssim >= chromesim:
+        print("Redwoods win")
+    else:
+        print("Chrome win")
+if x==6 and y==2:
+    if redwoodssim >= atlassim:
+        print("Redwoods win")
+    else:
+        print("Atlas win")
+if x==6 and y==7:
+    if redwoodssim >= waterdogssim:
+        print("Redwoods win")
+    else:
+        print("Waterdogs win")
+if x==6 and y==8:
+    if redwoodssim >= whipsnakessim:
+        print("Redwoods win")
+    else:
+        print("Whipsnakes win")
+
+
+
+
+#simming for Waterdogs (done)
+if x==7 and y==1:
+    if waterdogssim >= archerssim:
+        print("Waterdogs win")
+    else:
+        print("Archers win")
+if x==7 and y==2:
+    if waterdogssim >= atlassim:
+        print("Waterdogs win")
+    else:
+        print("Atlas win")
+if x==7 and y==3:
+    if waterdogssim >= cannonssim:
+        print("Waterdogs win")
+    else:
+        print("Cannons win")
+if x==7 and y==4:
+    if waterdogssim >= chaossim:
+        print("Waterdogs win")
+    else:
+        print("Chaos win")
+if x==7 and y==5:
+    if waterdogssim >= chromesim:
+        print("Waterdogs win")
+    else:
+        print("Chrome win")
+if x==7 and y==6:
+    if waterdogssim >= redwoodssim:
+        print("Waterdogs win")
+    else:
+        print("Redwoods win")
+if x==7 and y==8:
+    if waterdogssim >= whipsnakessim:
+        print("Waterdogs win")
+    else:
+        print("Whipsnakes win")
+
+
+
+
+#simming for Whipsnakes (done)
+if x==8 and y==1:
+    if whipsnakessim >= archerssim:
+        print(" win")
+    else:
+        print("Archers win")
+if x==8 and y==2:
+    if whipsnakessim >= atlassim:
+        print("Whipsnakes win")
+    else:
+        print("Atlas Win")
+if x==8 and y==3:
+    if whipsnakessim >= cannonssim:
+        print("Whipsnakes win")
+    else:
+        print("Cannons win")
+if x==8 and y==4:
+    if whipsnakessim >= chaossim:
+        print("Whipsnakes win")
+    else:
+        print("Chaos win")
+if x==8 and y==5:
+    if whipsnakessim >= chromesim:
+        print("Whipsnakes win")
+    else:
+        print("Chrome win")
+if x==8 and y==6:
+    if whipsnakessim >= redwoodssim:
+        print("Whipsnakes win")
+    else:
+        print("Redwoods win")
+if x==8 and y==7:
+    if whipsnakessim >= waterdogssim:
+        print("Whipsnakes win")
+    else:
+        print("Waterdogs win")
